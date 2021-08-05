@@ -9,7 +9,7 @@ export { render };
 export { passToClient };
 
 // See https://vite-plugin-ssr.com/data-fetching
-const passToClient = ["pageProps"];
+const passToClient = ["pageProps", "documentProps"];
 
 function render(pageContext: PageContext) {
   const { Page, pageProps } = pageContext;
